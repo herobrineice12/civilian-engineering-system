@@ -1,18 +1,15 @@
-## Getting Started
+## Começamos pelo começo
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Bem vindo ao projeto de Sistema de Engenharia Civil para a A3 de Programação de soluções computacionais
 
-## Folder Structure
+## Integrantes
 
-The workspace contains two folders by default, where:
+- Pedro Henrique Cerqueira Cunha
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Objetivo
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Nosso sistema possui o objetivo de criar um programa simple para controle de [...]
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Estrutura
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Todos os arquivos principais para o funcionamento do sistema devem estar na pasta /src/, cada elemento dentro de seu respectivo pacote para evitar confusões
