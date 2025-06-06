@@ -5,10 +5,14 @@ Bem vindo ao projeto de Sistema de Engenharia Civil para a A3 de Programação d
 ## Integrantes
 
 - Pedro Henrique Cerqueira Cunha
+- Guilherme Tiago Alves Pereira
+- Gabriel Jesus Pereira
+- Jõao Eudes Silva cruz
+- Carlos Adriel dos Santos Dias
 
 ## Objetivo
 
-Nosso sistema possui o objetivo de criar um programa simple para controle de [...]
+Nosso sistema possui o objetivo de criar um programa simple para controle de sistema de casdastro
 
 ## Estrutura
 
