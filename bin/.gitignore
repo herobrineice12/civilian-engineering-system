@@ -1,0 +1,11 @@
+/.classpath
+/.project
+/.vscode/
+/App.class
+/InterfaceUsuario.class
+/Pessoa.class
+/PessoaFisica.class
+/PessoaJuridica.class
+/README.md
+/SistemaCRUD.class
+/app/
