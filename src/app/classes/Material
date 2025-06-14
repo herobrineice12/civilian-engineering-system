@@ -1,0 +1,36 @@
+package classes;
+public class Material implements Cadastravel {
+    private String nome;
+    private int quantidade;
+    private String fornecedor;
+
+    public Material(String nome, int quantidade, String fornecedor) {
+        this.nome = nome;
+        this.quantidade = quantidade;
+        this.fornecedor = fornecedor;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+    public int getQuantidade() {
+        return quantidade;
+    }
+    public String getFornecedor() {
+        return fornecedor;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    @Override
+    public String toString() {
+        return "Material: " + nome + ", Quantidade: " + quantidade + ", Fornecedor: " + fornecedor;
+    }
+
+    public void cadastrar() { /* implementação futura */ }
+    public void editar() { /* implementação futura */ }
+    public void excluir() { /* implementação futura */ }
+    public void listar() { /* implementação futura */ }
+}
