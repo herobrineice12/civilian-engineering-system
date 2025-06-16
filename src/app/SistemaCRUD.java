@@ -1,7 +1,9 @@
 package app;
 
 import java.util.ArrayList;
-import app.user.*;
+
+import app.iterables.users.Pessoa;
+import app.iterables.users.client.*;
 
 public class SistemaCRUD {
     private static ArrayList<Pessoa> pessoas = new ArrayList<>();

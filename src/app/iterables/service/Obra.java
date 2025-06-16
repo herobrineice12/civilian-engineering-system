@@ -1,18 +1,20 @@
-package classes;
+package app.iterables.service;
+
 import java.util.Date;
 import java.util.List;
 
+import app.iterables.Cadastravel;
+import app.iterables.users.Pessoa;
+import app.iterables.users.staff.Funcionario;
+
 public class Obra implements Cadastravel {
     private int id;
-    private String nome;
-    private String endereco;
-    private Date dataInicio;
-    private Date dataFim;
-    private String status;
-    private Cliente cliente;
+    private String nome, endereco, status;
+    private Date dataInicio, dataFim;
+    private Pessoa cliente;
     private List<Funcionario> funcionarios;
 
-    public Obra(int id, String nome, String endereco, Date dataInicio, Date dataFim, String status, Cliente cliente, List<Funcionario> funcionarios) {
+    public Obra(int id, String nome, String endereco, Date dataInicio, Date dataFim, String status, Pessoa cliente, List<Funcionario> funcionarios) {
         this.id = id;
         this.nome = nome;
         this.endereco = endereco;

@@ -1,14 +1,15 @@
 package app.gui.tab;
 
-import app.cfg.Config;
 import app.gui.Window;
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class SignIn extends Window {
+public class SignIn extends Window implements ActionListener{
     private JLabel nomeLabel, emailLabel, senhaLabel;
     private JTextField askNome, askEmail;
     private JPasswordField askSenha;
-    private JButton signInButton;
+    private JButton signInButton, cancelarButton;
 
     public SignIn() {
         super("Cadastre-se como usuário", 400, 235, false, null);
@@ -22,7 +23,11 @@ public class SignIn extends Window {
         askNome = new JTextField(20);
         askEmail = new JTextField(20);
         askSenha = new JPasswordField(20);
+
         signInButton = new JButton("Cadastrar");
+        signInButton.addActionListener(this);
+        cancelarButton = new JButton("Cancelar");
+        cancelarButton.addActionListener(this);
 
         getContentPane().add(nomeLabel);
         getContentPane().add(askNome);
@@ -31,6 +36,7 @@ public class SignIn extends Window {
         getContentPane().add(senhaLabel);
         getContentPane().add(askSenha);
         getContentPane().add(signInButton);
+        getContentPane().add(cancelarButton);
 
         layout.putConstraint(SpringLayout.WEST, nomeLabel, 20, SpringLayout.WEST, getContentPane());
         layout.putConstraint(SpringLayout.NORTH, nomeLabel, 25, SpringLayout.NORTH, getContentPane());
@@ -52,11 +58,27 @@ public class SignIn extends Window {
         layout.putConstraint(SpringLayout.WEST, askSenha, 20, SpringLayout.EAST, senhaLabel);
         layout.putConstraint(SpringLayout.NORTH, askSenha, 20, SpringLayout.SOUTH, askEmail);
         layout.putConstraint(SpringLayout.EAST, askSenha, -20, SpringLayout.EAST, getContentPane());
+        
+        layout.putConstraint(SpringLayout.HORIZONTAL_CENTER, cancelarButton, -60, SpringLayout.HORIZONTAL_CENTER, getContentPane());
+        layout.putConstraint(SpringLayout.NORTH, cancelarButton, 30, SpringLayout.SOUTH, askSenha);
 
-        layout.putConstraint(SpringLayout.HORIZONTAL_CENTER, signInButton, 0, SpringLayout.HORIZONTAL_CENTER, getContentPane());
+        layout.putConstraint(SpringLayout.HORIZONTAL_CENTER, signInButton, 60, SpringLayout.HORIZONTAL_CENTER, getContentPane());
         layout.putConstraint(SpringLayout.NORTH, signInButton, 30, SpringLayout.SOUTH, askSenha);
 
         this.revalidate();
         this.repaint();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        Object source = e.getSource();
+
+        if (source == signInButton) {
+            String nome = askNome.getText();
+        
+            JOptionPane.showMessageDialog(this, "Novo usuario de nome " + nome + " cadastrado");
+        } else if (source == cancelarButton){
+            dispose();
+        }
     }
 }

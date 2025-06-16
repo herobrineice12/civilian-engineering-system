@@ -12,7 +12,7 @@ Bem vindo ao projeto de Sistema de Engenharia Civil para a A3 de Programação d
 
 ## Objetivo
 
-Nosso sistema possui o objetivo de criar um programa simple para controle de sistema de casdastro
+Nosso sistema possui o objetivo de criar um programa simples para controle de sistema de casdastro com interface simples que ofereça flexibilidade para manusear dados entre diferentes tipos, sendo estes parte do serviço, como os materiais a ser usado e as obras, a funcionarios e clientes que variam de pessoa fisica a pessoa jurídica
 
 ## Estrutura
 

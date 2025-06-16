@@ -14,9 +14,9 @@ public abstract class Window extends JFrame{
         
         this.setIconImage(icone);
         if (Config.modoEscuro.getSwitch()) {
-            this.setForeground(Color.darkGray);
+            this.setBackground(Color.darkGray);
         } else {
-            this.setForeground(Color.white);
+            this.setBackground(Color.white);
         }
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -1,4 +1,7 @@
-package classes;
+package app.iterables.service;
+
+import app.iterables.Cadastravel;
+
 public class Material implements Cadastravel {
     private String nome;
     private int quantidade;

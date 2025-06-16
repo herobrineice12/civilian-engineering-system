@@ -1,0 +1,42 @@
+package app.iterables.users.staff;
+
+import app.cfg.SwitchState;
+import app.iterables.Cadastravel;
+import app.iterables.users.Pessoa;
+
+public class Funcionario extends Pessoa implements Cadastravel {
+    private String cargo;
+    private double salario;
+
+    public Funcionario(String nome, String email, String senha, String telefone, String cargo, double salario) {
+        super(nome, email, senha, telefone, SwitchState.ON, SwitchState.OFF);
+        this.cargo = cargo;
+        this.salario = salario;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Cargo: " + cargo + ", Salário: R$" + salario;
+    }
+
+    public void cadastrar() { /* implementação futura */ }
+    public void editar() { /* implementação futura */ }
+    public void excluir() { /* implementação futura */ }
+    public void listar() { /* implementação futura */ }
+}
